@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окно в Мир</title>
+    <style>
+        /* Базовые настройки */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #8a2be2;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        h1 {
+            margin: 0;
+            color: #b026ff;
+        }
+
+        /* Навигация */
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: #a897b8;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            color: #b026ff;
+        }
+
+        /* Контент */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Блоки с информацией */
+        .block {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .block h2 {
+            color: #b026ff;
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .block p {
+            margin-bottom: 10px;
+        }
+
+        /* Блок рекламы */
+        .ad {
+            background-color: #2a1a2e;
+            border: 1px dashed #b026ff;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .ad p {
+            margin: 0;
+            color: #b026ff;
+            font-size: 14px;
+        }
+
+        /* Подвал */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Окно в Мир</h1>
+        <nav>
+            <a href="#news">Новости</a>
+            <a href="#extreme">Экстрим</a>
+            <a href="#fun">Развлечения</a>
+            <a href="#video">Видео</a>
+            <a href="#fashion">Мода</a>
+            <a href="#wars">Войны</a>
+            <a href="#crime">Криминал</a>
+            <a href="#med">Медицина</a>
+            <a href="#tech">Технологии</a>
+            <a href="#nature">Природа</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Реклама 1 -->
+        <div class="ad">
+            <p>Реклама: Готический магазин. Скидка 20% по коду DARK20</p>
+        </div>
+
+        <!-- Раздел 1 -->
+        <div class="block" id="news">
+            <h2>1. Новости</h2>
+            <p><strong>Новый прорыв в технологиях.</strong> Учёные представили прототип устройства, способного изменить подход к энергоснабжению.</p>
+            <p><strong>Климатический саммит.</strong> Лидеры стран договорились о снижении выбросов на 30% к 2035 году.</p>
+            <p><strong>Культурная премия.</strong> Объявлены лауреаты премии в области современного искусства.</p>
+        </div>
+
+        <!-- Раздел 2 -->
+        <div class="block" id="extreme">
+            <h2>2. Экстремальные случаи</h2>
+            <p><strong>Выжил в пустыне 10 дней.</strong> Путешественник без воды дождался спасателей благодаря самодельному конденсатору.</p>
+            <p><strong>Прыжок с парашютом в грозу.</strong> Спортсмен приземлился на дерево и остался невредим.</p>
+        </div>
+
+        <!-- Раздел 3 -->
+        <div class="block" id="fun">
+            <h2>3. Развлечения</h2>
+            <p><strong>Настольные игры.</strong> Обзор пяти самых популярных настолок сезона.</p>
+            <p><strong>Премьеры месяца.</strong> Что смотреть в кино и на стримингах.</p>
+        </div>
+
+        <!-- Реклама 2 -->
+        <div class="ad">
+            <p>Реклама: Курсы выживания. Научись выживать в дикой природе за 30 дней</p>
+        </div>
+
+        <!-- Раздел 4 -->
+        <div class="block" id="video">
+            <h2>4. Видеоприколы и пранки</h2>
+            <p><strong>Топ-5 безобидных пранков.</strong> Розыгрыши, которые никого не обидели.</p>
+            <p><strong>Вирусные видео недели.</strong> Подборка самых смешных роликов.</p>
+        </div>
+
+        <!-- Раздел 5 -->
+        <div class="block" id="fashion">
+            <h2>5. Мода разных стран</h2>
+            <p><strong>Женская мода (Франция).</strong> Парижский шик: платье-футляр, шарф, туфли-лодочки.</p>
+            <p><strong>Мужская мода (Италия).</strong> Неаполитанский костюм: мягкие плечи, лёгкие ткани.</p>
+        </div>
+
+        <!-- Раздел 6 -->
+        <div class="block" id="wars">
+            <h2>6. Военные конфликты</h2>
+            <p><strong>Первая мировая.</strong> Причины и последствия крупнейшего конфликта начала XX века.</p>
+            <p><strong>Дроны на войне.</strong> Как меняется тактика ведения боевых действий.</p>
+        </div>
+
+        <!-- Раздел 7 -->
+        <div class="block" id="crime">
+            <h2>7. Криминал и преступники</h2>
+            <p><strong>Раскрыта серия краж.</strong> Полиция задержала группу, специализировавшуюся на ювелирных магазинах.</p>
+            <p><strong>Самые опасные преступники.</strong> Обзор громких уголовных процессов XX века.</p>
+        </div>
+
+        <!-- Реклама 3 -->
+        <div class="ad">
+            <p>Реклама: VPN-сервис. Анонимность и безопасность в сети — 3 месяца бесплатно</p>
+        </div>
+
+        <!-- Раздел 8 -->
+        <div class="block" id="med">
+            <h2>8. Медицина и технологии</h2>
+            <p><strong>Сбалансированный рацион.</strong> Простые правила здорового питания.</p>
+            <p><strong>ИИ в медицине.</strong> Алгоритмы помогают врачам ставить диагнозы.</p>
+            <p><strong>Роботизированные операции.</strong> Точность и минимальное вмешательство.</p>
+        </div>
+
+        <!-- Раздел 9 -->
+        <div class="block" id="tech">
+            <h2>9. Технические технологии</h2>
+            <p><strong>Искусственный интеллект.</strong> Как ИИ меняет работу и учёбу.</p>
+            <p><strong>Возобновляемые источники.</strong> Солнечная и ветровая энергия.</p>
+        </div>
+
+        <!-- Раздел 10 -->
+        <div class="block" id="nature">
+            <h2>10. Флора и фауна</h2>
+            <p><strong>Редкие цветы.</strong> Виды, занесённые в Красную книгу.</p>
+            <p><strong>Хищники Африки.</strong> Львы, леопарды и гепарды.</p>
+            <p><strong>Советы выживания.</strong> Как найти и очистить воду в лесу. Способы разведения огня без спичек.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Окно в Мир. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
